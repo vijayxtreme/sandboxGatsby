@@ -1,0 +1,28 @@
+.social {
+    iframe {
+        max-height: 283px;
+        overflow-y: auto;
+
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 64em) {
+
+    .social {
+        iframe {
+            max-width: 50% !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            max-width: initial !important;
+        }
+    }
+
+}
+
+
+/* Phone Size */
+
+@media screen and (max-width: 48em){ 
+
+}

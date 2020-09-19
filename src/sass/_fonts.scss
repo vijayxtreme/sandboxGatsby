@@ -1,0 +1,114 @@
+//Could cache these (later)
+@font-face {
+    font-family: "Myriad Pro Cn";
+    src: local('Myriad Pro Condensed'), url('https://cdnwest.radnet.com/fonts/MyriadPro-LightSemiCn.otf');
+}
+@font-face {
+    font-family: "Futura Condensed";
+    src: local('Futura Condensed'), url('https://cdnwest.radnet.com/fonts/Futura-Condensed-Bold.otf');
+}
+@font-face {
+    font-family: "Open Sans";
+    src: local('OpenSans-Light'), url('https://cdnwest.radnet.com/fonts/opensans/OpenSans-Light.ttf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    src: local('OpenSans-LightItalic'), url('https://cdnwest.radnet.com/fonts/opensans/OpenSans-LightItalic.ttf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: local('OpenSans-Regular'), url('https://cdnwest.radnet.com/fonts/opensans/OpenSans-Regular.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Open Sans";
+    src:
+        local('Open Sans'), 
+        url('https://cdnwest.radnet.com/fonts/opensans/OpenSans-SemiBold.ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    src:
+        local('Open Sans'), 
+        url('https://cdnwest.radnet.com/fonts/opensans/OpenSans-SemiBoldItalic.ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Open Sans";
+    src:
+        local('Open Sans'), 
+        url('https://cdnwest.radnet.com/fonts/opensans/OpenSans-Bold.ttf');
+    font-weight: 800;
+}
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    src:
+        local('Open Sans'), 
+        url('https://cdnwest.radnet.com/fonts/opensans/OpenSans-BoldItalic.ttf');
+    font-weight: 800;
+}
+@font-face {
+    font-family: "Open Sans";
+    src:
+        local('Open Sans'), 
+        url('https://cdnwest.radnet.com/fonts/opensans/OpenSans-ExtraBold.ttf');
+    font-weight: 900;
+}
+@font-face {
+    font-family: "Open Sans";
+    font-style:italic;
+    src:
+        local('Open Sans'), 
+        url('https://cdnwest.radnet.com/fonts/opensans/OpenSans-ExtraBoldItalic.ttf');
+    font-weight: 900;
+}
+@font-face {
+    font-family: "Eina";
+    src:  local('Eina01-Light'),  url('https://cdnwest.radnet.com/fonts/eina/Eina01-Light.ttf');
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Eina";
+    font-style: italic;
+    src:  local('Eina01-LightItalic'),  url('https://cdnwest.radnet.com/fonts/eina/Eina01-LightItalic.ttf');
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Eina";
+    src:  local('Eina01-Regular'),  url('https://cdnwest.radnet.com/fonts/eina/Eina01-Regular.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Eina";
+    font-style: italic;
+    src: local('Eina01-RegularItalic'), url('https://cdnwest.radnet.com/fonts/eina/Eina01-RegularItalic.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Eina";
+    src:  local('Eina01-SemiBold'),  url('https://cdnwest.radnet.com/fonts/eina/Eina01-SemiBold.ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Eina";
+    font-style: italic;
+    src: local('Eina01-RegularItalic'), url('https://cdnwest.radnet.com/fonts/eina/Eina01-SemiBoldItalic.ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Eina";
+    src:  local('Eina01-Bold'),  url('https://cdnwest.radnet.com/fonts/eina/Eina01-Bold.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Eina";
+    font-style: italic;
+    src: local('Eina01-BoldItalic'), url('https://cdnwest.radnet.com/fonts/eina/Eina01-BoldItalic.ttf');
+    font-weight: 700;
+}

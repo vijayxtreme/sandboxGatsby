@@ -1,0 +1,61 @@
+%centerblock {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hearfromyou {
+    width: 100%;
+    max-width: 720px;
+    @extend %centerblock;
+    .form-inner {
+        background-color: #F8F9FB;
+        max-width: 534px;
+        @extend %centerblock;
+        label.item {
+            color: #2A5BAA;
+        }
+        label.service {
+            cursor: pointer;
+        }
+        input[type=text],
+        input[type=email],
+        textarea,
+        select {
+            width: 100%;
+            border-radius: 14px;
+        }
+        fieldset:not(:first-child) p {
+            margin-top: 0;
+        }
+    }
+    button,
+    .button {
+        max-width: 350px;
+    }
+}
+
+.form-blue {
+    background-color: #F8F9FB;
+}
+
+
+/* Tablet Size */
+
+@media screen and (max-width: 64em) {}
+
+
+/* Phone Size */
+
+@media screen and (max-width: 48em) {
+    .hearfromyou {
+        max-width: 100%;
+        .form-inner {
+            background-color: #F8F9FB;
+            max-width: 100%;
+        }
+        button,
+        .button {
+            max-width: 100%;
+        }
+    }
+}

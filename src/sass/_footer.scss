@@ -1,0 +1,88 @@
+footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    box-sizing: border-box;
+
+    background: #233664;
+    color: white;
+    .logo {
+        display: inline;
+    }
+
+    ul {
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-bottom: 0;
+        padding-top: 0;
+        list-style-type: none;
+        padding-left: 0rem;
+        li {
+            font-size: 0.8rem;
+            line-height: 1.25rem;
+            color: white;
+            a { color: white; }
+        }
+    }
+    h5 {
+        color: white;
+    }
+
+    input { min-height: 34px; width: 300px; }
+    button { padding: 0.5rem 1rem; border: 0; }
+
+    .footer-social {
+        ul {
+            li {
+                display:inline;
+                img {
+                   height: 14px;
+                   width: 14px;
+                }
+                padding-right: 20px;
+            }
+            li:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+
+}
+.copyright {
+    font-size: 0.75rem;
+}
+
+/* Tablet Size */
+@media screen and (max-width: 64em){
+    footer {
+        h5 {
+            text-align: center;
+        }
+        ul {
+            li {
+                font-size: 0.9rem;
+                line-height: 2rem;
+                text-align: center;
+            }
+        }
+        .newsletter, .copyright {
+            text-align: center;
+        }
+    }
+}
+
+/* Phone Size */
+
+@media screen and (max-width: 48em){
+   footer {
+       .footer-social {
+           ul {
+               li {}
+           }
+       }
+       .our-locations {
+         display: none;
+       }
+   }
+}

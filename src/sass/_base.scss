@@ -1,0 +1,454 @@
+$border: #979797;
+$blue: #306C7E;
+$btnBlue: #2a5baa;
+$gray: #5F5F5F;
+$white: #fff;
+$cta: #244f94;
+$btn-hover: #66ccff;
+$gray-hover: #868484;
+$radnet-red: #8B1817;
+$cta-hover: #244f94;
+$radnet-red-active: #5D100F;
+.clearfix {
+    &:after {
+        display: block;
+        clear: both;
+        content: "";
+    }
+}
+
+%container,
+.center-block {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center,
+.text-center {
+    text-align: center !important;
+}
+
+.container-outer {
+    max-width: 1440px;
+    @extend %container;
+}
+
+.container {
+    max-width: 1150px;
+    @extend %container;
+}
+
+.container-inner {
+    max-width: 1000px;
+    @extend %container;
+}
+
+.desktop {
+    display: block;
+}
+
+.tablet {
+    display: none;
+}
+
+.mobile {
+    display: none;
+}
+
+.search {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    /* From Tachyons */
+    font-family: "Eina", -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+}
+
+
+/* Layout */
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+p {
+    line-height: 1.5;
+    color: #616871;
+}
+
+ul li {
+    color: #616871;
+    line-height: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    color: #243565
+}
+
+h2 {
+    font-size: 36px;
+}
+
+fieldset {
+    border: 0;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    border-radius: 2px;
+    border: 0;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    font-size: 1rem;
+}
+
+select {
+    border: none;
+    height: 2rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../images/select-arrow.png);
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    background-repeat: no-repeat;
+    background-position: 97%;
+}
+
+textarea {
+    border: 0;
+    border-radius: 2px;
+    resize: none;
+    min-height: 4rem;
+}
+
+
+/* Buttons */
+
+%button {
+    display: inline-block;
+    text-align: center;
+    border-radius: 20px;
+    box-sizing: border-box;
+    line-height: 1.25;
+    padding: .7rem 1.75rem .5rem 1.75rem;
+    cursor: pointer;
+}
+
+.button,
+button {
+    @extend %button;
+}
+
+.button-set {
+    display: inline-block;
+    border-radius: 20px;
+    background: #F8F9FB;
+}
+
+button,
+input[type=submit] {
+    color: #2A5BAA;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #F8F9FB;
+    border: none;
+}
+
+button.transparent,
+.button.transparent,
+button.clear,
+.button.clear {
+    color: #243565;
+    background-color: transparent;
+    border: 1px solid #243565;
+    &:hover,
+    &:active {
+        background-color: transparent;
+    }
+}
+
+button.submit-form {
+    background-color: #2A5BAA;
+    color: white;
+}
+
+button.close-btn,
+a.close-btn {
+    background: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+button.close-btn:hover,
+a.close-btn:hover {
+    background: transparent;
+}
+
+button.close-btn:active,
+a.close-btn:active {
+    background: transparent;
+    outline: none;
+}
+
+.button:hover,
+button:hover {
+    background-color: $btn-hover;
+}
+
+.button:hover,
+button:hover {
+    background-color: $btn-hover;
+}
+
+.button.v1,
+button.v1 {
+    background: $gray;
+    color: $white;
+}
+
+.button.cta,
+button.cta {
+    background-color: $btnBlue;
+    color: $white;
+}
+
+.button.cta:hover,
+button.cta:hover {
+    background-color: $cta-hover;
+}
+
+.button.cta:active,
+button.cta:active {
+    background-color: $radnet-red-active;
+}
+
+.gradient-pink {
+    background: #c06c84ab;
+    background: linear-gradient(to bottom, #c06c84ab, #7dd2e81f);
+    &:hover {
+        background-color: #2A5BAD;
+        background: linear-gradient(to bottom, #2a5badd4, #7dd2e81f);
+    }
+}
+
+.gradient-blue {
+    background-color: #2A5BAD;
+    background: linear-gradient(to top, #2a5badd4, #2A5BAD, #fff);
+    &:hover {
+        background: #c06c84ab;
+        background: linear-gradient(to top, #c06c84ab, #8B1817, #fff);
+    }
+}
+
+.tile-info {
+    position: absolute;
+    bottom: 0px;
+    background: #000000ba;
+    width: calc(100% - 1rem);
+    left: 0.5rem;
+    padding-bottom: 20px;
+    color: white;
+    padding-top: 20px;
+}
+
+.tile {
+    min-height: 270px;
+    height: auto;
+    box-sizing: border-box;
+    line-height: 300px;
+    a {
+        font-weight: 600;
+        color: white;
+        text-shadow: 0px 1px #3d3d3d;
+    }
+    text-align: center;
+}
+
+// .enter-your-email {
+//     padding
+// }
+ul.checkboxes {
+    li:before {
+        content: '';
+        display: inline-block;
+        background-image: url(../images/checkbox.svg);
+        background-repeat: no-repeat;
+        height: 26px;
+        width: 26px;
+        position: relative;
+        top: 10px;
+        left: -10px;
+    }
+    li {
+        list-style-type: none;
+        vertical-align: middle;
+        color: #2A5BAD;
+    }
+}
+
+.rdnt-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    background: rgb(34, 34, 34);
+    opacity: 1;
+    top: 0;
+    z-index: 999;
+    &-inner {
+        position: relative;
+        top: 1rem;
+        background-color: white;
+    }
+    &-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.show {
+    display: block !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+
+/* Images */
+
+.mh-jumbo-image {
+    max-height: 840px;
+}
+
+.circular-image {
+    border-radius: 50%;
+    border: 0;
+}
+
+
+/* Hover States */
+
+//Override Tachyons
+.grow:focus,
+.grow:hover {
+    transform: scale(1.02) !important;
+}
+
+
+/* Error States */
+
+.form-error-item {
+    border: 2px solid red;
+}
+
+@media screen and (max-width: 1279px) {
+    %container-m {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tablet {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+    .container-outer-m {
+        width: 90%;
+        @extend %container-m;
+    }
+    .container-m {
+        width: 80%;
+        @extend %container-m;
+    }
+    .container-inner-m {
+        width: 70%;
+        @extend %container-m;
+    }
+    main {
+        padding-top: initial;
+    }
+    iframe {
+        display: block;
+    }
+    button,
+    .button,
+    input,
+    img,
+    iframe {
+        max-width: 100%;
+        min-width: initial;
+    }
+    img {
+        height: auto;
+        max-width: 100% !important;
+    }
+}
+
+
+/* Phone Size */
+
+@media screen and (max-width: 48em) {
+    %container-xs {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .desktop {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    h4 {
+        font-size: 0.8rem;
+    }
+    h5 {
+        font-size: 0.7rem;
+    }
+    h6 {
+        font-size: 0.5rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    ul li {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+    .logo {
+        display: block;
+    }
+    .container-outer-xs {
+        width: 90%;
+        @extend %container-xs;
+    }
+    .container-xs {
+        width: 80%;
+        @extend %container-xs;
+    }
+    .container-inner-xs {
+        width: 70%;
+        @extend %container-xs;
+    }
+}

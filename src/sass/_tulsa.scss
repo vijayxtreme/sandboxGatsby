@@ -1,0 +1,117 @@
+.tulsa.home {
+    // p:first-child {
+    //     text-align: center;
+    //     img {
+    //         width: 100%;
+    //     }
+    // }
+    .hero p:first-child {
+        text-align: left;
+    }
+}
+
+.faqs {
+    &-question {
+        color: #315EA8;
+        cursor: pointer;
+        padding: 5px 2.5px;
+        width: 100%;
+        &:after {
+            display: inline;
+            content: "+";
+            float: right;
+            padding-right: 10px;
+        }
+        &.active {
+            background: #F8F9FB;
+        }
+        &.active:after {
+            content: "-";
+        }
+    }
+    &-answer {
+        color: #616871;
+        white-space: pre-wrap;
+    }
+}
+
+.timeline {
+    h3,
+    p {
+        padding: 0;
+        margin: 0;
+    }
+    h3 {
+        font-weight: 400;
+        color: #315EA8;
+        font-size: 24px;
+    }
+    p {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    p.subtitle {
+        font-weight: 200;
+    }
+    .timecircle {
+        background: #66CCFF;
+        height: 26px;
+        width: 26px;
+        display: inline-block;
+        position: absolute;
+        left: -14px;
+        top: 20px;
+        border-radius: 50%;
+        border: 4px solid #fff;
+    }
+}
+
+
+/* Tablet */
+
+@media screen and (max-width: 64em) {
+    .social {
+        iframe {
+            max-width: 50% !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            max-width: initial !important;
+        }
+    }
+}
+
+
+/* Phone Size */
+
+@media screen and (max-width: 48em) {
+    .timeline {
+        h3,
+        p {
+            padding: 0;
+            margin: 0;
+        }
+        h3 {
+            font-weight: 400;
+            color: #315EA8;
+            font-size: 1rem;
+        }
+        p {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        p.subtitle {
+            font-weight: 200;
+        }
+        .timecircle {
+            background: #66CCFF;
+            height: 26px;
+            width: 26px;
+            display: inline-block;
+            position: absolute;
+            left: -14px;
+            top: 20px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+        }
+    }
+}
